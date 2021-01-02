@@ -1,5 +1,5 @@
 # Selection sort
-# Algorithm time complexity: O(n2)
+# Algorithm average time complexity: Θ(n^2)
 
 def selection_sort(arr):
     """

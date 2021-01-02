@@ -1,5 +1,5 @@
 # Bubble sort
-# Algorithm time complexity: O(n2)
+# Algorithm average time complexity: Θ(n^2)
 
 def bubble_sort(arr):
     """
