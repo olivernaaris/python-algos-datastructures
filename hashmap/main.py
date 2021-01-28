@@ -39,9 +39,10 @@ class AlgoHashTable:
 
 
 hash_table = AlgoHashTable(256)
-hash_table.set_val('blah@example.com', 'some value')
-hash_table.set_val('meow@example.com', 'some meow value')
-print(hash_table)
-hash_table.set_val('blah@example.com', 'some blah value')
-print(hash_table)
-print(hash_table.get_val('meow@example.com'))
+with open("data.txt") as f:
+    for line in f:
+        key, value = line.split(":")
+        hash_table.set_val(key, value)
+
+print(hash_table.get_val('andrew@example.com'))
+print(hash_table.get_val('evgeny@example.com'))
